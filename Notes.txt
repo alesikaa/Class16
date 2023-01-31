@@ -1,0 +1,81 @@
+Methods in Java:
+     Is just a collection of Java Statement and blocks of code like IF ELSE LOOP PRINTLN etc.
+
+ Why should we about methods:
+    1) It allows us to simply large code as we can divide the logic into smaller parts by creating methods
+     for them build those methods one by one and later on combine them to build the complete application.
+     2) Methods allow us to re-use code.
+     3) Methods allow us to be flexible.
+
+ How can we create Methods?
+     There are two types built-in and user defined.
+
+ Built-in methods:
+      The methods which are designed by Java developers for example the println() nextInt() method in the scanner
+      class length() present in String class they are all built-in methods.
+
+  User Defined Methods:
+       They methods that we write.
+  Methods which return something when called and others are methods which do not return anything when called.
+
+  int add(int a, int b){
+  return a+b;
+  }
+  int =>return type of a method
+  add => name of the method
+  (int a, int b) => parameters of the method or the input to the method
+  { => body of the method
+  }
+
+  Rules:
+  return type and the values that we're returning from a method should match
+  we can only assign methods to variables of same type.
+
+  ============================================================
+
+ There are three types of variables with respect to their scope
+
+  ******  Local variables:
+       if a variable is created inside a block of code like a method, loop , if condition etc. they are
+       called local variables.
+   Upside:
+       Local variables occupy the memory for the shortest period of line. You should
+       always try to write code with the help of local variables.
+   Downside:
+        They can't be accessed outside the block in which they are created. They have very limited  scope.
+
+   *****  Instance variables:
+       All the variables which are created inside a class but outside of methods are called instance variables.
+    Upside:
+          We can use them in all the instance methods of that class, their scope is larger than local variables.
+    Downside:
+          They stay  longer in the memory as compared to local variables.
+
+   *******  Static variables:
+       All variables which are outside of methods and have the static keyword are called Static Variables.
+   Upside:
+       Static Variables only occupy one memory location from the Ram even though we create 1000 objects of that
+       class.
+       They can be used in any block of code inside the class they can be accessed in any methods of a class.
+       They can also be accessed with the help of any object of that class. They have the most
+       wide scope.
+  Downside:
+       They are loaded into the memory when a class is loaded even though you don't use them.
+
+  =========================================================================================================
+
+  Access modifiers:
+          Access modifiers are some keywords in java that we can use to control the access of
+          variables, methods, and classes.
+          There are 4 access levels private protected default public
+          And there are 2 keyword that we use to control this access for ex. private protected and public.
+   Private:
+        if we write private keyword with a variable or a method or a class. We can access that variable or methods,
+         or class within the same class.
+   Default:
+         default is not a keyword when we don't write any access modifiers with variables or methods or classes
+         default access is applied automatically by java, which means these variables methods or classes can be
+         access inside any other class which is present inside the same package.
+   Public:
+         public is a keyword when written with any variable or method or class it means any class in
+          your project can access these things.
